@@ -1,0 +1,263 @@
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-16 09:02:07  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x20af2b52]'
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:17  
+通信连接出现异常,Worker地址:127.0.0.1:50563
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:17  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:17  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.AbstractRemoting$5.operationComplete(AbstractRemoting.java:459) ] - 2024-10-16 11:11:17  
+往</127.0.0.1:50563> 发送请求指令失败
+[ WARN ] - [ edu.hitsz.remoting.AbstractRemoting$5.operationComplete(AbstractRemoting.java:461) ] - 2024-10-16 11:11:17  
+edu.hitsz.remoting.command.RemotingCommand@63e53b37
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:37  
+通信连接出现异常,Worker地址:127.0.0.1:50602
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:37  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:37  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:45  
+通信连接出现异常,Worker地址:127.0.0.1:50585
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:45  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:45  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:53  
+通信连接出现异常,Worker地址:127.0.0.1:50572
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:53  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:53  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:821)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-16 13:54:33  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x5de9f947]'
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:01  
+通信连接出现异常,Worker地址:127.0.0.1:58429
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:01  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:01  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:01  
+通信连接出现异常,Worker地址:127.0.0.1:58412
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:01  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:01  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:02  
+通信连接出现异常,Worker地址:127.0.0.1:58410
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:02  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:02  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:02  
+通信连接出现异常,Worker地址:127.0.0.1:58407
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:02  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:02  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-16 14:54:19  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x46346c9a]'
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:34  
+通信连接出现异常,Worker地址:127.0.0.1:58736
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:34  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:34  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:36  
+通信连接出现异常,Worker地址:127.0.0.1:58737
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:36  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:36  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:38  
+通信连接出现异常,Worker地址:127.0.0.1:58739
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:38  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:38  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:39  
+通信连接出现异常,Worker地址:127.0.0.1:58738
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:39  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:39  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

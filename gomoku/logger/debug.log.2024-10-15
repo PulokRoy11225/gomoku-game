@@ -1,0 +1,2161 @@
+[ ERROR ] - [ edu.hitsz.commons.utils.Parser.parseClientConfig(Parser.java:52) ] - 2024-10-15 18:29:56  
+读取clientconfig.xml失败
+java.io.FileNotFoundException: clientconfig.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at edu.hitsz.commons.utils.XMLParseUtil.createReadRoot(XMLParseUtil.java:48)
+	at edu.hitsz.commons.utils.Parser.parseClientConfig(Parser.java:31)
+	at edu.hitsz.commons.ParserTest.testParseClientConfig(ParserTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.init(Server.java:100) ] - 2024-10-15 18:32:09  
+Server开始初始化....
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.initConfig(Server.java:143) ] - 2024-10-15 18:32:09  
+Server initialization completed with config: ServerConfig{ip='localhost', port=8888}
+[ DEBUG ] - [ io.netty.util.internal.logging.InternalLoggerFactory.useLog4JLoggerFactory(InternalLoggerFactory.java:89) ] - 2024-10-15 18:32:09  
+Using Log4J as the default logging framework
+[ DEBUG ] - [ io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) ] - 2024-10-15 18:32:09  
+-Dio.netty.eventLoopThreads: 24
+[ DEBUG ] - [ io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) ] - 2024-10-15 18:32:09  
+-Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) ] - 2024-10-15 18:32:09  
+-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) ] - 2024-10-15 18:32:09  
+-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) ] - 2024-10-15 18:32:09  
+-Dio.netty.noUnsafe: false
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) ] - 2024-10-15 18:32:09  
+Java version: 21
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) ] - 2024-10-15 18:32:09  
+sun.misc.Unsafe.theUnsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) ] - 2024-10-15 18:32:09  
+sun.misc.Unsafe.copyMemory: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) ] - 2024-10-15 18:32:09  
+sun.misc.Unsafe.storeFence: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) ] - 2024-10-15 18:32:09  
+java.nio.Buffer.address: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:320) ] - 2024-10-15 18:32:09  
+direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) ] - 2024-10-15 18:32:09  
+java.nio.Bits.unaligned: available, true
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:452) ] - 2024-10-15 18:32:09  
+jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @33c7e1bb
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) ] - 2024-10-15 18:32:09  
+java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) ] - 2024-10-15 18:32:09  
+sun.misc.Unsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) ] - 2024-10-15 18:32:09  
+maxDirectMemory: 536870912 bytes (maybe)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) ] - 2024-10-15 18:32:09  
+-Dio.netty.tmpdir: C:\Users\HP\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) ] - 2024-10-15 18:32:09  
+-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) ] - 2024-10-15 18:32:09  
+Platform: Windows
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) ] - 2024-10-15 18:32:09  
+-Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) ] - 2024-10-15 18:32:09  
+-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG ] - [ io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) ] - 2024-10-15 18:32:09  
+java.nio.ByteBuffer.cleaner(): available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) ] - 2024-10-15 18:32:09  
+-Dio.netty.noPreferDirect: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) ] - 2024-10-15 18:32:09  
+-Dio.netty.noKeySetOptimization: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) ] - 2024-10-15 18:32:09  
+-Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) ] - 2024-10-15 18:32:09  
+org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.initRemoting(Server.java:127) ] - 2024-10-15 18:32:09  
+Server通信服务完成!
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.startRemoting(Server.java:79) ] - 2024-10-15 18:32:09  
+正在开启通信服务....
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) ] - 2024-10-15 18:32:09  
+-Dio.netty.processId: 4608 (auto-detected)
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:142) ] - 2024-10-15 18:32:09  
+-Djava.net.preferIPv4Stack: false
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:143) ] - 2024-10-15 18:32:09  
+-Djava.net.preferIPv6Addresses: false
+[ DEBUG ] - [ io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:139) ] - 2024-10-15 18:32:09  
+Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG ] - [ io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) ] - 2024-10-15 18:32:09  
+Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) ] - 2024-10-15 18:32:09  
+-Dio.netty.machineId: 00:ff:4a:ff:fe:0e:69:08 (auto-detected)
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) ] - 2024-10-15 18:32:10  
+-Dio.netty.leakDetection.level: simple
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) ] - 2024-10-15 18:32:10  
+-Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.numHeapArenas: 21
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.numDirectArenas: 21
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.pageSize: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.maxOrder: 9
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.chunkSize: 4194304
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.useCacheForAllThreads: false
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:87) ] - 2024-10-15 18:32:10  
+-Dio.netty.allocator.type: pooled
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:96) ] - 2024-10-15 18:32:10  
+-Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:99) ] - 2024-10-15 18:32:10  
+-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-15 18:32:10  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x8b87a358]'
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer.serverStart(NettyRemotingServer.java:75) ] - 2024-10-15 18:32:10  
+Netty通信服务Server端启动
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer.serverStart(NettyRemotingServer.java:76) ] - 2024-10-15 18:32:10  
+Netty通信服务Server端配置信息 : RemotingServerConfig [listenPort=8888, serverWorkerThreads=32, serverCallbackExecutorThreads=24, serverSelectorThreads=24, serverOnewaySemaphoreValue=32, serverAsyncSemaphoreValue=64, readerIdleTimeSeconds=0, writerIdleTimeSeconds=0, serverChannelMaxIdleTimeSeconds=120, invokeTimeoutMillis=20000]
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemoting$RemotingEventExecutor.run(AbstractRemoting.java:502) ] - 2024-10-15 18:32:10  
+RemotingEventExecutor service started
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.startRemoting(Server.java:86) ] - 2024-10-15 18:32:10  
+通信服务开启成功!
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.startTimer(Server.java:50) ] - 2024-10-15 18:32:10  
+启动定时器!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.init(Client.java:81) ] - 2024-10-15 18:32:46  
+Client开始初始化....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initConfig(Client.java:135) ] - 2024-10-15 18:32:46  
+Client初始化配置信息成功! ClientConfig{name='Alice', ip='localhost', port=8001, serverIp='localhost', serverPort=8888}
+[ DEBUG ] - [ io.netty.util.internal.logging.InternalLoggerFactory.useLog4JLoggerFactory(InternalLoggerFactory.java:89) ] - 2024-10-15 18:32:46  
+Using Log4J as the default logging framework
+[ DEBUG ] - [ io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) ] - 2024-10-15 18:32:46  
+-Dio.netty.eventLoopThreads: 24
+[ DEBUG ] - [ io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) ] - 2024-10-15 18:32:46  
+-Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) ] - 2024-10-15 18:32:46  
+-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) ] - 2024-10-15 18:32:46  
+-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) ] - 2024-10-15 18:32:46  
+-Dio.netty.noUnsafe: false
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) ] - 2024-10-15 18:32:46  
+Java version: 21
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) ] - 2024-10-15 18:32:46  
+sun.misc.Unsafe.theUnsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) ] - 2024-10-15 18:32:46  
+sun.misc.Unsafe.copyMemory: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) ] - 2024-10-15 18:32:46  
+sun.misc.Unsafe.storeFence: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) ] - 2024-10-15 18:32:46  
+java.nio.Buffer.address: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:320) ] - 2024-10-15 18:32:46  
+direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) ] - 2024-10-15 18:32:46  
+java.nio.Bits.unaligned: available, true
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:452) ] - 2024-10-15 18:32:46  
+jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @480bdb19
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) ] - 2024-10-15 18:32:46  
+java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) ] - 2024-10-15 18:32:46  
+sun.misc.Unsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) ] - 2024-10-15 18:32:46  
+maxDirectMemory: 268435456 bytes (maybe)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) ] - 2024-10-15 18:32:46  
+-Dio.netty.tmpdir: C:\Users\HP\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) ] - 2024-10-15 18:32:46  
+-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) ] - 2024-10-15 18:32:46  
+Platform: Windows
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) ] - 2024-10-15 18:32:46  
+-Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) ] - 2024-10-15 18:32:46  
+-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG ] - [ io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) ] - 2024-10-15 18:32:46  
+java.nio.ByteBuffer.cleaner(): available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) ] - 2024-10-15 18:32:46  
+-Dio.netty.noPreferDirect: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) ] - 2024-10-15 18:32:46  
+-Dio.netty.noKeySetOptimization: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) ] - 2024-10-15 18:32:46  
+-Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) ] - 2024-10-15 18:32:46  
+org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initRemoting(Client.java:117) ] - 2024-10-15 18:32:47  
+初始化通信服务完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initBoard(Client.java:112) ] - 2024-10-15 18:32:49  
+棋盘初始化成功!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initApplication(Client.java:99) ] - 2024-10-15 18:32:49  
+初始化application完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:60) ] - 2024-10-15 18:32:49  
+正在开启通信服务....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:67) ] - 2024-10-15 18:32:49  
+通信服务开启成功!
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.init(Server.java:100) ] - 2024-10-15 19:54:46  
+Server开始初始化....
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.initConfig(Server.java:143) ] - 2024-10-15 19:54:47  
+Server initialization completed with config: ServerConfig{ip='localhost', port=8888}
+[ DEBUG ] - [ io.netty.util.internal.logging.InternalLoggerFactory.useLog4JLoggerFactory(InternalLoggerFactory.java:89) ] - 2024-10-15 19:54:47  
+Using Log4J as the default logging framework
+[ DEBUG ] - [ io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) ] - 2024-10-15 19:54:47  
+-Dio.netty.eventLoopThreads: 24
+[ DEBUG ] - [ io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) ] - 2024-10-15 19:54:47  
+-Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) ] - 2024-10-15 19:54:47  
+-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) ] - 2024-10-15 19:54:47  
+-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) ] - 2024-10-15 19:54:47  
+-Dio.netty.noUnsafe: false
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) ] - 2024-10-15 19:54:47  
+Java version: 21
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) ] - 2024-10-15 19:54:47  
+sun.misc.Unsafe.theUnsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) ] - 2024-10-15 19:54:47  
+sun.misc.Unsafe.copyMemory: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) ] - 2024-10-15 19:54:47  
+sun.misc.Unsafe.storeFence: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) ] - 2024-10-15 19:54:47  
+java.nio.Buffer.address: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:320) ] - 2024-10-15 19:54:47  
+direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) ] - 2024-10-15 19:54:47  
+java.nio.Bits.unaligned: available, true
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:452) ] - 2024-10-15 19:54:47  
+jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @33c7e1bb
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) ] - 2024-10-15 19:54:47  
+java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) ] - 2024-10-15 19:54:47  
+sun.misc.Unsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) ] - 2024-10-15 19:54:47  
+maxDirectMemory: 536870912 bytes (maybe)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) ] - 2024-10-15 19:54:47  
+-Dio.netty.tmpdir: C:\Users\HP\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) ] - 2024-10-15 19:54:47  
+-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) ] - 2024-10-15 19:54:47  
+Platform: Windows
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) ] - 2024-10-15 19:54:47  
+-Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) ] - 2024-10-15 19:54:47  
+-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG ] - [ io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) ] - 2024-10-15 19:54:47  
+java.nio.ByteBuffer.cleaner(): available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) ] - 2024-10-15 19:54:47  
+-Dio.netty.noPreferDirect: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) ] - 2024-10-15 19:54:47  
+-Dio.netty.noKeySetOptimization: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) ] - 2024-10-15 19:54:47  
+-Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) ] - 2024-10-15 19:54:47  
+org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.initRemoting(Server.java:127) ] - 2024-10-15 19:54:47  
+Server通信服务完成!
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.startRemoting(Server.java:79) ] - 2024-10-15 19:54:47  
+正在开启通信服务....
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) ] - 2024-10-15 19:54:47  
+-Dio.netty.processId: 6648 (auto-detected)
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:142) ] - 2024-10-15 19:54:47  
+-Djava.net.preferIPv4Stack: false
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:143) ] - 2024-10-15 19:54:47  
+-Djava.net.preferIPv6Addresses: false
+[ DEBUG ] - [ io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:139) ] - 2024-10-15 19:54:47  
+Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG ] - [ io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) ] - 2024-10-15 19:54:47  
+Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) ] - 2024-10-15 19:54:47  
+-Dio.netty.machineId: 00:ff:4a:ff:fe:0e:69:08 (auto-detected)
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) ] - 2024-10-15 19:54:47  
+-Dio.netty.leakDetection.level: simple
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) ] - 2024-10-15 19:54:47  
+-Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.numHeapArenas: 21
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.numDirectArenas: 21
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.pageSize: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.maxOrder: 9
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.chunkSize: 4194304
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.useCacheForAllThreads: false
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:87) ] - 2024-10-15 19:54:47  
+-Dio.netty.allocator.type: pooled
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:96) ] - 2024-10-15 19:54:47  
+-Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:99) ] - 2024-10-15 19:54:47  
+-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-15 19:54:47  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xf722d162]'
+[ ERROR ] - [ edu.hitsz.remoting.netty.NettyRemotingServer.serverStart(NettyRemotingServer.java:78) ] - 2024-10-15 19:54:47  
+Netty通信服务Server端启动失败!
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemoting$RemotingEventExecutor.run(AbstractRemoting.java:502) ] - 2024-10-15 19:54:47  
+RemotingEventExecutor service started
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.startRemoting(Server.java:86) ] - 2024-10-15 19:54:47  
+通信服务开启成功!
+[ DEBUG ] - [ edu.hitsz.cluster.server.Server.startTimer(Server.java:50) ] - 2024-10-15 19:54:47  
+启动定时器!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.init(Client.java:81) ] - 2024-10-15 19:54:51  
+Client开始初始化....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initConfig(Client.java:135) ] - 2024-10-15 19:54:51  
+Client初始化配置信息成功! ClientConfig{name='Alice', ip='localhost', port=8001, serverIp='localhost', serverPort=8888}
+[ DEBUG ] - [ io.netty.util.internal.logging.InternalLoggerFactory.useLog4JLoggerFactory(InternalLoggerFactory.java:89) ] - 2024-10-15 19:54:51  
+Using Log4J as the default logging framework
+[ DEBUG ] - [ io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) ] - 2024-10-15 19:54:51  
+-Dio.netty.eventLoopThreads: 24
+[ DEBUG ] - [ io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) ] - 2024-10-15 19:54:51  
+-Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) ] - 2024-10-15 19:54:51  
+-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) ] - 2024-10-15 19:54:51  
+-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) ] - 2024-10-15 19:54:51  
+-Dio.netty.noUnsafe: false
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) ] - 2024-10-15 19:54:51  
+Java version: 21
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) ] - 2024-10-15 19:54:51  
+sun.misc.Unsafe.theUnsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) ] - 2024-10-15 19:54:51  
+sun.misc.Unsafe.copyMemory: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) ] - 2024-10-15 19:54:51  
+sun.misc.Unsafe.storeFence: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) ] - 2024-10-15 19:54:51  
+java.nio.Buffer.address: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:320) ] - 2024-10-15 19:54:51  
+direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) ] - 2024-10-15 19:54:51  
+java.nio.Bits.unaligned: available, true
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:452) ] - 2024-10-15 19:54:51  
+jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @480bdb19
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) ] - 2024-10-15 19:54:51  
+java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) ] - 2024-10-15 19:54:51  
+sun.misc.Unsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) ] - 2024-10-15 19:54:51  
+maxDirectMemory: 268435456 bytes (maybe)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) ] - 2024-10-15 19:54:51  
+-Dio.netty.tmpdir: C:\Users\HP\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) ] - 2024-10-15 19:54:51  
+-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) ] - 2024-10-15 19:54:51  
+Platform: Windows
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) ] - 2024-10-15 19:54:51  
+-Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) ] - 2024-10-15 19:54:51  
+-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG ] - [ io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) ] - 2024-10-15 19:54:51  
+java.nio.ByteBuffer.cleaner(): available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) ] - 2024-10-15 19:54:51  
+-Dio.netty.noPreferDirect: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) ] - 2024-10-15 19:54:51  
+-Dio.netty.noKeySetOptimization: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) ] - 2024-10-15 19:54:51  
+-Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) ] - 2024-10-15 19:54:51  
+org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initRemoting(Client.java:117) ] - 2024-10-15 19:54:51  
+初始化通信服务完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initBoard(Client.java:112) ] - 2024-10-15 19:54:53  
+棋盘初始化成功!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initApplication(Client.java:99) ] - 2024-10-15 19:54:53  
+初始化application完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:60) ] - 2024-10-15 19:54:53  
+正在开启通信服务....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:67) ] - 2024-10-15 19:54:53  
+通信服务开启成功!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.init(Client.java:81) ] - 2024-10-15 19:54:58  
+Client开始初始化....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initConfig(Client.java:135) ] - 2024-10-15 19:54:58  
+Client初始化配置信息成功! ClientConfig{name='Bob', ip='localhost', port=8002, serverIp='localhost', serverPort=8888}
+[ DEBUG ] - [ io.netty.util.internal.logging.InternalLoggerFactory.useLog4JLoggerFactory(InternalLoggerFactory.java:89) ] - 2024-10-15 19:54:58  
+Using Log4J as the default logging framework
+[ DEBUG ] - [ io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) ] - 2024-10-15 19:54:58  
+-Dio.netty.eventLoopThreads: 24
+[ DEBUG ] - [ io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) ] - 2024-10-15 19:54:58  
+-Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) ] - 2024-10-15 19:54:58  
+-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) ] - 2024-10-15 19:54:58  
+-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) ] - 2024-10-15 19:54:58  
+-Dio.netty.noUnsafe: false
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) ] - 2024-10-15 19:54:58  
+Java version: 21
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) ] - 2024-10-15 19:54:58  
+sun.misc.Unsafe.theUnsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) ] - 2024-10-15 19:54:58  
+sun.misc.Unsafe.copyMemory: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) ] - 2024-10-15 19:54:58  
+sun.misc.Unsafe.storeFence: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) ] - 2024-10-15 19:54:58  
+java.nio.Buffer.address: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:320) ] - 2024-10-15 19:54:58  
+direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) ] - 2024-10-15 19:54:58  
+java.nio.Bits.unaligned: available, true
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:452) ] - 2024-10-15 19:54:58  
+jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @480bdb19
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) ] - 2024-10-15 19:54:58  
+java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) ] - 2024-10-15 19:54:58  
+sun.misc.Unsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) ] - 2024-10-15 19:54:58  
+maxDirectMemory: 268435456 bytes (maybe)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) ] - 2024-10-15 19:54:58  
+-Dio.netty.tmpdir: C:\Users\HP\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) ] - 2024-10-15 19:54:58  
+-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) ] - 2024-10-15 19:54:58  
+Platform: Windows
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) ] - 2024-10-15 19:54:58  
+-Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) ] - 2024-10-15 19:54:58  
+-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG ] - [ io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) ] - 2024-10-15 19:54:58  
+java.nio.ByteBuffer.cleaner(): available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) ] - 2024-10-15 19:54:58  
+-Dio.netty.noPreferDirect: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) ] - 2024-10-15 19:54:58  
+-Dio.netty.noKeySetOptimization: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) ] - 2024-10-15 19:54:58  
+-Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) ] - 2024-10-15 19:54:58  
+org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initRemoting(Client.java:117) ] - 2024-10-15 19:54:58  
+初始化通信服务完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initBoard(Client.java:112) ] - 2024-10-15 19:55:00  
+棋盘初始化成功!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initApplication(Client.java:99) ] - 2024-10-15 19:55:00  
+初始化application完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:60) ] - 2024-10-15 19:55:00  
+正在开启通信服务....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:67) ] - 2024-10-15 19:55:00  
+通信服务开启成功!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.init(Client.java:81) ] - 2024-10-15 19:55:02  
+Client开始初始化....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initConfig(Client.java:135) ] - 2024-10-15 19:55:02  
+Client初始化配置信息成功! ClientConfig{name='Charlie', ip='localhost', port=8003, serverIp='localhost', serverPort=8888}
+[ DEBUG ] - [ io.netty.util.internal.logging.InternalLoggerFactory.useLog4JLoggerFactory(InternalLoggerFactory.java:89) ] - 2024-10-15 19:55:02  
+Using Log4J as the default logging framework
+[ DEBUG ] - [ io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) ] - 2024-10-15 19:55:02  
+-Dio.netty.eventLoopThreads: 24
+[ DEBUG ] - [ io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) ] - 2024-10-15 19:55:02  
+-Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) ] - 2024-10-15 19:55:02  
+-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG ] - [ io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) ] - 2024-10-15 19:55:02  
+-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) ] - 2024-10-15 19:55:02  
+-Dio.netty.noUnsafe: false
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) ] - 2024-10-15 19:55:02  
+Java version: 21
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) ] - 2024-10-15 19:55:02  
+sun.misc.Unsafe.theUnsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) ] - 2024-10-15 19:55:02  
+sun.misc.Unsafe.copyMemory: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) ] - 2024-10-15 19:55:02  
+sun.misc.Unsafe.storeFence: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) ] - 2024-10-15 19:55:02  
+java.nio.Buffer.address: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:320) ] - 2024-10-15 19:55:02  
+direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) ] - 2024-10-15 19:55:02  
+java.nio.Bits.unaligned: available, true
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:452) ] - 2024-10-15 19:55:02  
+jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @480bdb19
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) ] - 2024-10-15 19:55:02  
+java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) ] - 2024-10-15 19:55:02  
+sun.misc.Unsafe: available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) ] - 2024-10-15 19:55:02  
+maxDirectMemory: 268435456 bytes (maybe)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) ] - 2024-10-15 19:55:02  
+-Dio.netty.tmpdir: C:\Users\HP\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) ] - 2024-10-15 19:55:02  
+-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) ] - 2024-10-15 19:55:02  
+Platform: Windows
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) ] - 2024-10-15 19:55:02  
+-Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) ] - 2024-10-15 19:55:02  
+-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG ] - [ io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) ] - 2024-10-15 19:55:02  
+java.nio.ByteBuffer.cleaner(): available
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) ] - 2024-10-15 19:55:02  
+-Dio.netty.noPreferDirect: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) ] - 2024-10-15 19:55:02  
+-Dio.netty.noKeySetOptimization: false
+[ DEBUG ] - [ io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) ] - 2024-10-15 19:55:02  
+-Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG ] - [ io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) ] - 2024-10-15 19:55:02  
+org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initRemoting(Client.java:117) ] - 2024-10-15 19:55:02  
+初始化通信服务完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initBoard(Client.java:112) ] - 2024-10-15 19:55:04  
+棋盘初始化成功!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.initApplication(Client.java:99) ] - 2024-10-15 19:55:04  
+初始化application完成!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:60) ] - 2024-10-15 19:55:04  
+正在开启通信服务....
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client.startRemoting(Client.java:67) ] - 2024-10-15 19:55:04  
+通信服务开启成功!
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$5.actionPerformed(Client.java:604) ] - 2024-10-15 19:57:10  
+start game, finding opponents...
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) ] - 2024-10-15 19:57:10  
+-Dio.netty.processId: 32164 (auto-detected)
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:142) ] - 2024-10-15 19:57:10  
+-Djava.net.preferIPv4Stack: false
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:143) ] - 2024-10-15 19:57:10  
+-Djava.net.preferIPv6Addresses: false
+[ DEBUG ] - [ io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:139) ] - 2024-10-15 19:57:10  
+Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG ] - [ io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) ] - 2024-10-15 19:57:10  
+Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) ] - 2024-10-15 19:57:10  
+-Dio.netty.machineId: 00:ff:4a:ff:fe:0e:69:08 (auto-detected)
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) ] - 2024-10-15 19:57:10  
+-Dio.netty.leakDetection.level: simple
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) ] - 2024-10-15 19:57:10  
+-Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.numHeapArenas: 10
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.numDirectArenas: 10
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.pageSize: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.maxOrder: 9
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.chunkSize: 4194304
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.useCacheForAllThreads: false
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:87) ] - 2024-10-15 19:57:10  
+-Dio.netty.allocator.type: pooled
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:96) ] - 2024-10-15 19:57:10  
+-Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:99) ] - 2024-10-15 19:57:10  
+-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-15 19:57:10  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-15 19:57:10  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@19f580dc
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:90) ] - 2024-10-15 19:57:10  
+-Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:91) ] - 2024-10-15 19:57:10  
+-Dio.netty.recycler.ratio: 8
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:92) ] - 2024-10-15 19:57:10  
+-Dio.netty.recycler.chunkSize: 32
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:93) ] - 2024-10-15 19:57:10  
+-Dio.netty.recycler.blocking: false
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:94) ] - 2024-10-15 19:57:10  
+-Dio.netty.recycler.batchFastThreadLocalOnly: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63) ] - 2024-10-15 19:57:10  
+-Dio.netty.buffer.checkAccessible: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64) ] - 2024-10-15 19:57:10  
+-Dio.netty.buffer.checkBounds: true
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) ] - 2024-10-15 19:57:10  
+Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3ae4bbc1
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-15 19:57:10  
+channel注册成功:127.0.0.1:59952
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelActive(NettyRemotingServer.java:131) ] - 2024-10-15 19:57:11  
+客户端连接成功: 127.0.0.1:59952
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:90) ] - 2024-10-15 19:57:11  
+-Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:91) ] - 2024-10-15 19:57:11  
+-Dio.netty.recycler.ratio: 8
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:92) ] - 2024-10-15 19:57:11  
+-Dio.netty.recycler.chunkSize: 32
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:93) ] - 2024-10-15 19:57:11  
+-Dio.netty.recycler.blocking: false
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:94) ] - 2024-10-15 19:57:11  
+-Dio.netty.recycler.batchFastThreadLocalOnly: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63) ] - 2024-10-15 19:57:11  
+-Dio.netty.buffer.checkAccessible: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64) ] - 2024-10-15 19:57:11  
+-Dio.netty.buffer.checkBounds: true
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) ] - 2024-10-15 19:57:11  
+Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@76cf5a82
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:11  
+收到请求指令:CONNECT
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ConnectProcessor.processRequest(ConnectProcessor.java:33) ] - 2024-10-15 19:57:11  
+ConnectProcessor正在处理请求...
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ConnectProcessor.processRequest(ConnectProcessor.java:50) ] - 2024-10-15 19:57:11  
+ConnectProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:11  
+收到响应指令:CONNECT_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$5.actionPerformed(Client.java:624) ] - 2024-10-15 19:57:11  
+Connect Success!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$5.actionPerformed(Client.java:604) ] - 2024-10-15 19:57:17  
+start game, finding opponents...
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) ] - 2024-10-15 19:57:17  
+-Dio.netty.processId: 2760 (auto-detected)
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:142) ] - 2024-10-15 19:57:17  
+-Djava.net.preferIPv4Stack: false
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:143) ] - 2024-10-15 19:57:17  
+-Djava.net.preferIPv6Addresses: false
+[ DEBUG ] - [ io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:139) ] - 2024-10-15 19:57:17  
+Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG ] - [ io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) ] - 2024-10-15 19:57:17  
+Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) ] - 2024-10-15 19:57:17  
+-Dio.netty.machineId: 00:ff:4a:ff:fe:0e:69:08 (auto-detected)
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) ] - 2024-10-15 19:57:17  
+-Dio.netty.leakDetection.level: simple
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) ] - 2024-10-15 19:57:17  
+-Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.numHeapArenas: 10
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.numDirectArenas: 10
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.pageSize: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.maxOrder: 9
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.chunkSize: 4194304
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.useCacheForAllThreads: false
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:87) ] - 2024-10-15 19:57:17  
+-Dio.netty.allocator.type: pooled
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:96) ] - 2024-10-15 19:57:17  
+-Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:99) ] - 2024-10-15 19:57:17  
+-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-15 19:57:17  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-15 19:57:17  
+channel注册成功:127.0.0.1:59976
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-15 19:57:17  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@5b49bfbc
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelActive(NettyRemotingServer.java:131) ] - 2024-10-15 19:57:17  
+客户端连接成功: 127.0.0.1:59976
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:90) ] - 2024-10-15 19:57:17  
+-Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:91) ] - 2024-10-15 19:57:17  
+-Dio.netty.recycler.ratio: 8
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:92) ] - 2024-10-15 19:57:17  
+-Dio.netty.recycler.chunkSize: 32
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:93) ] - 2024-10-15 19:57:17  
+-Dio.netty.recycler.blocking: false
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:94) ] - 2024-10-15 19:57:17  
+-Dio.netty.recycler.batchFastThreadLocalOnly: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63) ] - 2024-10-15 19:57:17  
+-Dio.netty.buffer.checkAccessible: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64) ] - 2024-10-15 19:57:17  
+-Dio.netty.buffer.checkBounds: true
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) ] - 2024-10-15 19:57:17  
+Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@43eff63a
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:17  
+收到请求指令:CONNECT
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ConnectProcessor.processRequest(ConnectProcessor.java:33) ] - 2024-10-15 19:57:17  
+ConnectProcessor正在处理请求...
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ConnectProcessor.processRequest(ConnectProcessor.java:50) ] - 2024-10-15 19:57:17  
+ConnectProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:17  
+收到响应指令:CONNECT_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$5.actionPerformed(Client.java:624) ] - 2024-10-15 19:57:17  
+Connect Success!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$5.actionPerformed(Client.java:604) ] - 2024-10-15 19:57:22  
+start game, finding opponents...
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) ] - 2024-10-15 19:57:22  
+-Dio.netty.processId: 31564 (auto-detected)
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:142) ] - 2024-10-15 19:57:22  
+-Djava.net.preferIPv4Stack: false
+[ DEBUG ] - [ io.netty.util.NetUtil.<clinit>(NetUtil.java:143) ] - 2024-10-15 19:57:22  
+-Djava.net.preferIPv6Addresses: false
+[ DEBUG ] - [ io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:139) ] - 2024-10-15 19:57:22  
+Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG ] - [ io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) ] - 2024-10-15 19:57:22  
+Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG ] - [ io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) ] - 2024-10-15 19:57:22  
+-Dio.netty.machineId: 00:ff:4a:ff:fe:0e:69:08 (auto-detected)
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) ] - 2024-10-15 19:57:22  
+-Dio.netty.leakDetection.level: simple
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) ] - 2024-10-15 19:57:22  
+-Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.numHeapArenas: 10
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.numDirectArenas: 10
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.pageSize: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.maxOrder: 9
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.chunkSize: 4194304
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.useCacheForAllThreads: false
+[ DEBUG ] - [ io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:87) ] - 2024-10-15 19:57:22  
+-Dio.netty.allocator.type: pooled
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:96) ] - 2024-10-15 19:57:22  
+-Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG ] - [ io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:99) ] - 2024-10-15 19:57:22  
+-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-15 19:57:22  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-15 19:57:22  
+channel注册成功:127.0.0.1:59996
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelActive(NettyRemotingServer.java:131) ] - 2024-10-15 19:57:22  
+客户端连接成功: 127.0.0.1:59996
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-15 19:57:22  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@64f6c4db
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:90) ] - 2024-10-15 19:57:22  
+-Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:91) ] - 2024-10-15 19:57:22  
+-Dio.netty.recycler.ratio: 8
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:92) ] - 2024-10-15 19:57:22  
+-Dio.netty.recycler.chunkSize: 32
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:93) ] - 2024-10-15 19:57:22  
+-Dio.netty.recycler.blocking: false
+[ DEBUG ] - [ io.netty.util.Recycler.<clinit>(Recycler.java:94) ] - 2024-10-15 19:57:22  
+-Dio.netty.recycler.batchFastThreadLocalOnly: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63) ] - 2024-10-15 19:57:22  
+-Dio.netty.buffer.checkAccessible: true
+[ DEBUG ] - [ io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64) ] - 2024-10-15 19:57:22  
+-Dio.netty.buffer.checkBounds: true
+[ DEBUG ] - [ io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) ] - 2024-10-15 19:57:22  
+Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@755821e
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:22  
+收到请求指令:CONNECT
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ConnectProcessor.processRequest(ConnectProcessor.java:33) ] - 2024-10-15 19:57:22  
+ConnectProcessor正在处理请求...
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ConnectProcessor.processRequest(ConnectProcessor.java:50) ] - 2024-10-15 19:57:22  
+ConnectProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:22  
+收到响应指令:CONNECT_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$5.actionPerformed(Client.java:624) ] - 2024-10-15 19:57:22  
+Connect Success!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:33  
+收到请求指令:CHALLENGE
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:33  
+收到请求指令:MATCH
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.MatchOpponentProcessor.processRequest(MatchOpponentProcessor.java:35) ] - 2024-10-15 19:57:33  
+MatchOpponentProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.MatchOpponentProcessor.processRequest(MatchOpponentProcessor.java:67) ] - 2024-10-15 19:57:33  
+MatchOpponentProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:57:33  
+收到响应指令:MATCH_SUCCESS
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:33  
+收到请求指令:MATCH
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.MatchOpponentProcessor.processRequest(MatchOpponentProcessor.java:35) ] - 2024-10-15 19:57:33  
+MatchOpponentProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.MatchOpponentProcessor.processRequest(MatchOpponentProcessor.java:67) ] - 2024-10-15 19:57:33  
+MatchOpponentProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:57:33  
+收到响应指令:MATCH_SUCCESS
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:33  
+收到响应指令:NULL
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$2.actionPerformed(Client.java:543) ] - 2024-10-15 19:57:39  
+start game
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:39  
+收到请求指令:START
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:39  
+收到响应指令:NULL
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:39  
+收到请求指令:OPPONENT_START
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$2.actionPerformed(Client.java:543) ] - 2024-10-15 19:57:43  
+start game
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:43  
+收到请求指令:START
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:43  
+收到响应指令:NULL
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:43  
+收到请求指令:OPPONENT_START
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:48  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:57:48  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:48  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:57:48  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:57:48  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:57:48  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:57:48  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:48  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:57:48  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:57:52  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:57:52  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:52  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:57:52  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:57:52  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:57:52  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:57:52  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:57:52  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:57:52  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:57:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:58:17  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:58:17  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:17  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:58:17  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:58:17  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:58:17  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:58:17  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:58:17  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:58:17  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:58:20  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:58:20  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:20  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:58:20  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:58:20  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:58:20  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:58:20  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:58:20  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:58:20  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:58:23  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:58:23  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:23  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:58:23  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:58:23  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:58:23  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:58:23  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:58:23  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:58:23  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:58:26  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:58:26  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:26  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:58:26  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:58:26  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:58:26  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:58:26  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:58:26  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:58:26  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:58:43  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:58:43  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:43  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:58:43  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:58:43  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:58:43  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:58:43  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:58:43  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:58:43  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:58:46  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:58:46  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:46  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:58:46  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:58:46  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:58:46  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:58:46  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:58:46  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:58:46  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:58:49  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:58:49  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:49  
+收到请求指令:WIN
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:60) ] - 2024-10-15 19:58:49  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:58:49  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:49  
+收到请求指令:LOSE
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:58:49  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:58:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:59:18  
+收到请求指令:RESTART
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.RestartRequestProcessor.processRequest(RestartRequestProcessor.java:28) ] - 2024-10-15 19:59:18  
+RestartRequestProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:18  
+收到请求指令:OPPONENT_RESTART
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:59:18  
+收到响应指令:RESTART_SUCCESS
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:59:32  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:59:32  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:32  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:59:32  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:59:32  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:59:32  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:59:32  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:59:32  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:59:32  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 19:59:37  
+收到请求指令:CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:31) ] - 2024-10-15 19:59:37  
+ChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:37  
+收到请求指令:OPPONENT_CHANGE_BOARD
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:27) ] - 2024-10-15 19:59:37  
+OpponentChangeBoardProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.cluster.client.processor.OpponentChangeBoardProcessor.processRequest(OpponentChangeBoardProcessor.java:35) ] - 2024-10-15 19:59:37  
+OpponentChangeBoardProcessor处理完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:101) ] - 2024-10-15 19:59:37  
+收到响应指令:CHANGE_OPPONENT_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.ChangeBoardProcessor.processRequest(ChangeBoardProcessor.java:80) ] - 2024-10-15 19:59:37  
+ChangeBoardProcessor处理请求完成!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 19:59:37  
+收到响应指令:CHANGE_BOARD_SUCCESS
+[ DEBUG ] - [ edu.hitsz.cluster.client.Client$Board$6.actionPerformed(Client.java:666) ] - 2024-10-15 19:59:37  
+Server端棋局状态改变成功!
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 19:59:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:00:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:99) ] - 2024-10-15 20:01:59  
+收到请求指令:RESTART
+[ DEBUG ] - [ edu.hitsz.cluster.server.processor.RestartRequestProcessor.processRequest(RestartRequestProcessor.java:28) ] - 2024-10-15 20:01:59  
+RestartRequestProcessor正在处理请求....
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:01:59  
+收到请求指令:OPPONENT_RESTART
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:97) ] - 2024-10-15 20:01:59  
+收到响应指令:RESTART_SUCCESS
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:02:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:03:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:56  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:04:59  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:02  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:05  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:08  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:11  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:14  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:17  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:20  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:23  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:26  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:29  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:32  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:35  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:38  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:41  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:44  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:47  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:50  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ DEBUG ] - [ edu.hitsz.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:95) ] - 2024-10-15 20:05:53  
+收到请求指令:PUSH_WAIT_USERINFO
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-15 20:05:56  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-15 20:05:56  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-15 20:05:56  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

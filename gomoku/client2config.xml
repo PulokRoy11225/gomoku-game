@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<client>
+    <name>Bob</name>
+    <gender>male</gender>
+    <age>25</age>
+    <from>UK</from>
+    <image>1</image>
+    <ip>localhost</ip>
+    <port>8002</port> <!-- Unique Port -->
+    <serverIp>localhost</serverIp>
+    <serverPort>8888</serverPort>
+</client>

@@ -1,0 +1,85 @@
+[ ERROR ] - [ edu.hitsz.commons.utils.Parser.parserServerConfig(Parser.java:69) ] - 2024-10-10 13:13:42  
+读取serverconfig.xml失败
+java.io.FileNotFoundException: \home\gomoku\serverconfig.xml (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at edu.hitsz.commons.utils.XMLParseUtil.createReadRoot(XMLParseUtil.java:48)
+	at edu.hitsz.commons.utils.Parser.parserServerConfig(Parser.java:60)
+	at edu.hitsz.cluster.server.Server.initConfig(Server.java:131)
+	at edu.hitsz.cluster.server.Server.init(Server.java:100)
+	at edu.hitsz.cluster.server.Server.start(Server.java:43)
+	at edu.hitsz.driver.ServerDriver.main(ServerDriver.java:11)
+[ ERROR ] - [ edu.hitsz.cluster.server.Server.init(Server.java:107) ] - 2024-10-10 13:13:42  
+Server初始化失败!
+[ ERROR ] - [ edu.hitsz.cluster.server.Server.startRemoting(Server.java:88) ] - 2024-10-10 13:13:42  
+Server通信服务开启失败!
+java.lang.NullPointerException: Cannot invoke "edu.hitsz.remoting.delegate.RemotingServerDelegate.start()" because "this.remotingServer" is null
+	at edu.hitsz.cluster.server.Server.startRemoting(Server.java:79)
+	at edu.hitsz.cluster.server.Server.start(Server.java:44)
+	at edu.hitsz.driver.ServerDriver.main(ServerDriver.java:11)
+[ ERROR ] - [ edu.hitsz.remoting.netty.NettyRemotingServer.serverStart(NettyRemotingServer.java:78) ] - 2024-10-10 14:51:57  
+Netty通信服务Server端启动失败!
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:102)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:479)
+	at io.netty.channel.DefaultChannelPipeline$HeadHandler.bind(DefaultChannelPipeline.java:1000)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeBind(DefaultChannelHandlerContext.java:457)
+	at io.netty.channel.DefaultChannelHandlerContext.bind(DefaultChannelHandlerContext.java:442)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:842)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:194)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:331)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ ERROR ] - [ edu.hitsz.remoting.netty.NettyRemotingServer.serverStart(NettyRemotingServer.java:78) ] - 2024-10-10 15:08:18  
+Netty通信服务Server端启动失败!
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:102)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:479)
+	at io.netty.channel.DefaultChannelPipeline$HeadHandler.bind(DefaultChannelPipeline.java:1000)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeBind(DefaultChannelHandlerContext.java:457)
+	at io.netty.channel.DefaultChannelHandlerContext.bind(DefaultChannelHandlerContext.java:442)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:842)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:194)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:331)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ ERROR ] - [ edu.hitsz.remoting.netty.NettyRemotingServer.serverStart(NettyRemotingServer.java:78) ] - 2024-10-10 16:06:59  
+Netty通信服务Server端启动失败!
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

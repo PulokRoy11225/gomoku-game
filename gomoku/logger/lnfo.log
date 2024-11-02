@@ -1,0 +1,413 @@
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-16 09:02:07  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x20af2b52]'
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemoting$RemotingEventExecutor.run(AbstractRemoting.java:502) ] - 2024-10-16 09:02:07  
+RemotingEventExecutor service started
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 09:03:55  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 09:03:55  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@6949f251
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 09:03:55  
+channel注册成功:127.0.0.1:50563
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 09:03:59  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 09:03:59  
+channel注册成功:127.0.0.1:50572
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 09:03:59  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@41943fef
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 09:04:01  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 09:04:01  
+channel注册成功:127.0.0.1:50585
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 09:04:01  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@5d3b5df1
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 09:04:04  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 09:04:04  
+channel注册成功:127.0.0.1:50602
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 09:04:04  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@ceaf0b1
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:17  
+通信连接出现异常,Worker地址:127.0.0.1:50563
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:17  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:17  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 11:11:17  
+closeChannel:关闭远程连接 127.0.0.1:50563 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 11:11:17  
+客户端断开链接: 127.0.0.1:50563
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 11:11:17  
+channel取消注册成功:127.0.0.1:50563
+[ WARN ] - [ edu.hitsz.remoting.AbstractRemoting$5.operationComplete(AbstractRemoting.java:459) ] - 2024-10-16 11:11:17  
+往</127.0.0.1:50563> 发送请求指令失败
+[ WARN ] - [ edu.hitsz.remoting.AbstractRemoting$5.operationComplete(AbstractRemoting.java:461) ] - 2024-10-16 11:11:17  
+edu.hitsz.remoting.command.RemotingCommand@63e53b37
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:37  
+通信连接出现异常,Worker地址:127.0.0.1:50602
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:37  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:37  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 11:11:37  
+closeChannel:关闭远程连接 127.0.0.1:50602 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 11:11:37  
+客户端断开链接: 127.0.0.1:50602
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 11:11:37  
+channel取消注册成功:127.0.0.1:50602
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:45  
+通信连接出现异常,Worker地址:127.0.0.1:50585
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:45  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:45  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 11:11:45  
+closeChannel:关闭远程连接 127.0.0.1:50585 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 11:11:45  
+客户端断开链接: 127.0.0.1:50585
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 11:11:45  
+channel取消注册成功:127.0.0.1:50585
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 11:11:53  
+通信连接出现异常,Worker地址:127.0.0.1:50572
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 11:11:53  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 11:11:53  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:821)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 11:11:53  
+closeChannel:关闭远程连接 127.0.0.1:50572 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 11:11:53  
+客户端断开链接: 127.0.0.1:50572
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 11:11:53  
+channel取消注册成功:127.0.0.1:50572
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-16 13:54:33  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x5de9f947]'
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemoting$RemotingEventExecutor.run(AbstractRemoting.java:502) ] - 2024-10-16 13:54:33  
+RemotingEventExecutor service started
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 13:55:31  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 13:55:31  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@3324e91e
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 13:55:31  
+channel注册成功:127.0.0.1:58407
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 13:55:34  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 13:55:34  
+channel注册成功:127.0.0.1:58410
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 13:55:34  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@7029c7e1
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 13:55:38  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 13:55:38  
+channel注册成功:127.0.0.1:58412
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 13:55:38  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@37f669d2
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 13:55:41  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 13:55:41  
+channel注册成功:127.0.0.1:58429
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 13:55:41  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@5c3d4a84
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:01  
+通信连接出现异常,Worker地址:127.0.0.1:58429
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:01  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:01  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 13:58:01  
+closeChannel:关闭远程连接 127.0.0.1:58429 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 13:58:01  
+客户端断开链接: 127.0.0.1:58429
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 13:58:01  
+channel取消注册成功:127.0.0.1:58429
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:01  
+通信连接出现异常,Worker地址:127.0.0.1:58412
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:01  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:01  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 13:58:01  
+closeChannel:关闭远程连接 127.0.0.1:58412 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 13:58:01  
+客户端断开链接: 127.0.0.1:58412
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 13:58:01  
+channel取消注册成功:127.0.0.1:58412
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:02  
+通信连接出现异常,Worker地址:127.0.0.1:58410
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:02  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:02  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 13:58:02  
+closeChannel:关闭远程连接 127.0.0.1:58410 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 13:58:02  
+客户端断开链接: 127.0.0.1:58410
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 13:58:02  
+channel取消注册成功:127.0.0.1:58410
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 13:58:02  
+通信连接出现异常,Worker地址:127.0.0.1:58407
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 13:58:02  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 13:58:02  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 13:58:02  
+closeChannel:关闭远程连接 127.0.0.1:58407 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 13:58:02  
+客户端断开链接: 127.0.0.1:58407
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 13:58:02  
+channel取消注册成功:127.0.0.1:58407
+[ WARN ] - [ io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:464) ] - 2024-10-16 14:54:19  
+Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x46346c9a]'
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemoting$RemotingEventExecutor.run(AbstractRemoting.java:502) ] - 2024-10-16 14:54:19  
+RemotingEventExecutor service started
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 14:55:43  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 14:55:43  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@6d9ffe53
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 14:55:43  
+channel注册成功:127.0.0.1:58736
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 14:55:44  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 14:55:44  
+channel注册成功:127.0.0.1:58737
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 14:55:44  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@36a61f12
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 14:55:46  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 14:55:46  
+channel注册成功:127.0.0.1:58738
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 14:55:46  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@19f87340
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:185) ] - 2024-10-16 14:55:50  
+开始尝试建立通信连接:localhost:8888
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelRegistered(NettyRemotingServer.java:116) ] - 2024-10-16 14:55:50  
+channel注册成功:127.0.0.1:58739
+[ INFO ] - [ edu.hitsz.remoting.AbstractRemotingClient.createChannel(AbstractRemotingClient.java:204) ] - 2024-10-16 14:55:50  
+建立远程连接成功:localhost:8888,edu.hitsz.remoting.netty.NettyChannelFuture@4197b1e8
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:34  
+通信连接出现异常,Worker地址:127.0.0.1:58736
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:34  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:34  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 14:56:34  
+closeChannel:关闭远程连接 127.0.0.1:58736 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 14:56:34  
+客户端断开链接: 127.0.0.1:58736
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 14:56:34  
+channel取消注册成功:127.0.0.1:58736
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:36  
+通信连接出现异常,Worker地址:127.0.0.1:58737
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:36  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:36  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 14:56:36  
+closeChannel:关闭远程连接 127.0.0.1:58737 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 14:56:36  
+客户端断开链接: 127.0.0.1:58737
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 14:56:36  
+channel取消注册成功:127.0.0.1:58737
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:38  
+通信连接出现异常,Worker地址:127.0.0.1:58739
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:38  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:38  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 14:56:38  
+closeChannel:关闭远程连接 127.0.0.1:58739 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 14:56:38  
+客户端断开链接: 127.0.0.1:58739
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 14:56:38  
+channel取消注册成功:127.0.0.1:58739
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:150) ] - 2024-10-16 14:56:39  
+通信连接出现异常,Worker地址:127.0.0.1:58738
+[ WARN ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.exceptionCaught(NettyRemotingServer.java:151) ] - 2024-10-16 14:56:39  
+通信连接出现异常:java.net.SocketException: Connection reset
+[ WARN ] - [ io.netty.channel.DefaultChannelPipeline.onUnhandledInboundException(DefaultChannelPipeline.java:1152) ] - 2024-10-16 14:56:39  
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] - [ edu.hitsz.commons.utils.RemotingHelper$1.operationComplete(RemotingHelper.java:74) ] - 2024-10-16 14:56:39  
+closeChannel:关闭远程连接 127.0.0.1:58738 true
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelInactive(NettyRemotingServer.java:139) ] - 2024-10-16 14:56:39  
+客户端断开链接: 127.0.0.1:58738
+[ INFO ] - [ edu.hitsz.remoting.netty.NettyRemotingServer$NettyConnectManageHandler.channelUnregistered(NettyRemotingServer.java:123) ] - 2024-10-16 14:56:39  
+channel取消注册成功:127.0.0.1:58738
